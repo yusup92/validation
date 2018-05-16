@@ -26,7 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         if (empty($input["email"])) {
             $errors['error'] = "email is required";
-        } elseif {
+        } else {
 
             $email = $input["email"];
             if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
